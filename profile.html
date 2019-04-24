@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./profile.css" />
+    <title>Profile</title>
+  </head>
+  <nav class="nav">
+    <div class="navContainer">
+      <div class="icons">
+        <img src="./images/message.png" alt="messages" class="icon1" />
+        <div class="infoDiv">
+          <img src="./images//info.png" alt="info" class="icon1" />
+          <p>2</p>
+        </div>
+      </div>
+      <div class="inputContainer" style="border: 1px solid #DDD; width: 10em; ">
+        <input type="text" placeholder="   find people, documents" />
+        <img class="icon" src="./images/search-icon.png" />
+      </div>
+      
+
+
+      <div class="timeContainer">
+            <p><span id="datetime"></span></p>
+
+      </div>
+      <script>
+            var dt = new Date();
+            document.getElementById("datetime").innerHTML = dt.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
+            </script>
+      <div class="working">
+        <input type="checkbox" class="checkbox" />
+        <h5>working</h5>
+      </div>
+      <div class="profilePictureContainer">
+        <img class="profpic" src="./images/profpic.png" alt="profile pic" />
+        <h4><b>Stephen Douglas</b></h4>
+      </div>
+    </div>
+  </nav>
+  <body>
+    <h1 class="header">Stephen Douglas: Profile</h1>
+    <main>
+      <div class="topBar">
+        <img
+          class="profpic"
+          class="topBarPic"
+          src="./images/profpic.png"
+          alt=""
+        />
+        <div class="insideTopBar">
+          <div class="align">
+            <a href="#" class="link">Stephen Douglas</a>
+            <a href=""> <img class="icon" src="./images//list.png" alt=""/></a>
+          </div>
+          <ul class="tabs">
+            <li><a class="tab1" href="#"> General </a></li>
+            <li><a class="tab" href="#">Files</a></li>
+            <li><a class="tab" href="#">Tasks</a></li>
+            <li><a class="tab" href="#">Calendar</a></li>
+            <li><a class="tab" href="#">Conversations</a></li>
+            <li><a class="tab" href="#">Photo</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="profileContainer">
+        <div class="picdiv">
+          <img
+            class="mainPic"
+            src="./images/profpic.png"
+            alt="profile picture"
+          />
+        </div>
+        <div>
+          <p><b>Contact Information</b></p>
+          <div>
+            <div class="middleContainer">
+              <div class="middleInfo">
+                <p class="middleInfo">E-Mail:</p>
+                <a href="#">Stephdouglas@gmail.com</a>
+              </div>
+            </div>
+          </div>
+          <p><b>General Information</b></p>
+          <div class="middleContainer">
+            <div class="middleInfo">
+              <p class="middleInfo">Birthday:</p>
+              <a href="#">10 June</a>
+            </div>
+            <div class="middleInfo">
+              <p class="middleInfo">Department:</p>
+              <a href="#">IT Department</a>
+            </div>
+            <div class="middleInfo">
+              <p class="middleInfo">Supervisor:</p>
+              <a href="#">Alex Boston</a>
+            </div>
+            <div class="middleInfo">
+              <p class="middleInfo">Subordinates:</p>
+              <div class="break">
+              <a href="#">Robert M(IT Consultant)</a>
+              <a href="#">Victoria Morrison(IT Consultant)</a>
+              </div>
+            </div>
+          </div>
+          <div>
+                <p><b>Additional Information</b></p>
+                <div>
+                  <div class="middleContainer">
+                    <div class="middleInfo">
+                      <p class="middleInfo">Groups:</p>
+                      <div class="break">
+                      <a href="#">New Product Development,</a>
+                      <a href="#">Office Supplies Contractor,</a>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+        </div>
+        
+      </div>
+      <div class="actionBox">
+          <p class="actions">Actions</p> 
+          <button class="actionButton">
+              <img class="icon" id='pen' src="./images/pen.png" alt="pen">Edit Profile
+            </button> 
+        </div>
+    </main>
+  </body>
+</html>
